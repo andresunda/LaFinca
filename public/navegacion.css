@@ -1,0 +1,170 @@
+
+
+   /*---------------------------------------BARRA DE NAVEGACION-----------------------------------------------------------*/
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: linear-gradient(to bottom, #000000, #0c0c0c, #151515, #1c1c1c, #232323);
+}
+header {
+
+    background-color: #000000;
+
+     }
+    /*NAVIGATION*/
+    nav{
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content : space-between;
+    align-items : center;
+}
+    .logo{
+    width: 170px;
+    margin-left : 15px;
+    }
+
+    .bar-btn{
+    font-size : 25px;
+    color: #fff;
+    margin-right: 40px;
+    cursor: pointer ;
+     }
+.nav-menu{
+    position: fixed;
+    width: 100%;
+    height: 0vh;
+    top:100px;
+    background: rgba(0, 0, 0, .95);
+    text-align: center;
+    transition: all .5s;
+    z-index: 999;
+
+}
+.nav-menu li{
+    display: none;
+    line-height: 50px;
+    margin:50px 0;
+    transition: all .5s;
+}
+.nav-menu li a{
+    color: #fff;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 700;
+    text-decoration: none;
+}
+.nav-menu li a.active, .nav-menu li a:hover{
+    color: rgba(248, 8, 8);
+    transition: .3s;
+}
+#check{
+    display: none;
+}
+#check:checked ~  .nav-menu{
+    height:100vh;
+}
+
+#check:checked ~ .nav-menu li {
+    display:block;
+}
+
+.banner-text
+{
+    padding: 0 30px;
+    margin-top: 150px;
+    text-align: center;
+    color: #fff;
+}
+.banner-text h1{
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+.banner-text span{
+    color: rgba(248, 8, 8);
+}
+.banner-text h2{
+    font-size: 16px;
+    font-weight: 600;
+}
+.button1{
+    margin-right: 40px;
+    padding: 10px 30px;
+    background-color: rgba(248, 8, 8);
+    color: #fff;
+    border-radius: 5px;
+    text-decoration: none;
+
+}
+.button1:hover{
+    background-color: #fff;
+    color: rgba(248, 8, 8);
+    transition: .5s;
+}
+.button2{
+    margin-right: 40px;
+    padding: 10px 30px;
+    background-color: #fff;
+    color:rgba(248, 8, 8);
+    border-radius: 5px;
+    text-decoration: none;
+}
+.button2:hover{
+    background-color:rgba(248, 8, 8);
+    color: #fff;
+    transition: .5s;
+}
+
+@media screen and (min-width: 768px){
+.logo{
+margin-left: 50px;
+}
+nav{
+height: 100px;
+}
+.bar-btn{
+display:none;
+}
+.nav-menu{
+position : relative;
+height: 108px;
+top: 0;
+background: none;
+transition: none;
+text-align : right;
+margin-right: 50px;
+}
+.nav-menu li{
+    display: inline-block;
+    line-height: 100px;
+    margin: 0 20px;
+    transition: none;
+}
+.nav-menu li a{
+    font-size: 22px;
+}
+.banner-text h1{
+    font-size: 70px;
+    margin-bottom: 30px;
+}
+.banner-text h2{
+    font-size: 20px;
+}
+
+}
+
+/*------------------------------------------------------------------------------*/
+/*ESTILOS PARA EL CAROUSELL*/
+.carousel-item{
+    height: 20rem;
+    background: rgb(0 ,0 ,0);
+    background-position: center;
+    background-size: cover;
+
+}
