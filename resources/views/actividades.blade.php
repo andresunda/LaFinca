@@ -3,7 +3,7 @@
 
 <div class="card card-content shadow">
     <div class="card-body">
-        <h1>Registro de actividades</h1>
+        <h1>Registro de actividades usando ahora git</h1>
         <br>
         <div class="row">
             <div class="col-lg-9">
